@@ -6,7 +6,7 @@
 - **Metadata**: The system stores blob metadata (id, size, timestamp, backend) separately from the actual data.
 - **Bearer Token**: Every request must include `Authorization: Bearer hello1234<token>`.
 - **Backend Selection**: The backend is chosen by the API endpoint (`/local`, `/db`, `/s3`), for example: "http://localhost:9000/v1/local/blobs" or "http://localhost:9000/v1/db/blobs" or "http://localhost:9000/v1/s3/blobs".
-- **S3 Access**: S3 interactions are done over plain HTTP. i have include my own bucket whcih is controlled by a policy to allow POSTs and GETs,  into a folder on the bucket called uploads.
+- **S3 Access**: S3 interactions are done over plain HTTP. i have included my own bucket which is controlled by a policy to allow POSTs and GETs,  into a folder on the bucket called uploads.
 ## Backends
 
 1. **Local File System**  
